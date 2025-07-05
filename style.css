@@ -238,3 +238,17 @@ button:hover {
     max-height: 60vh; /* Use more of the screen vertically */
   }
 }
+
+/* Space fact box */
+.space-fact {
+  background: #fffbe6;
+  color: #0032A0;
+  border-left: 6px solid #046b99;
+  border-radius: 6px;
+  font-family: 'DM Mono', 'Inter', 'Public Sans', monospace;
+  font-size: 1.1em;
+  margin: 0 0 18px 0;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  text-align: center;
+}
