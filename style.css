@@ -139,6 +139,13 @@ button:hover {
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
+  /* Add transition for smooth scaling */
+  transition: transform 0.3s cubic-bezier(0.4,0,0.2,1);
+}
+
+/* Smooth scaling effect on hover */
+.gallery-item:hover img {
+  transform: scale(1.06);
 }
 
 .gallery-item p {
