@@ -115,7 +115,7 @@ button:hover {
   flex: 1 1 100%;  /* full width by default */
   min-width: 280px;
   max-width: 500px;
-  background: white;
+  background: #046b99; /* NASA blue shade for picture cards */
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
@@ -123,6 +123,8 @@ button:hover {
   display: flex;
   flex-direction: column;
   font-family: 'Inter', 'Public Sans', Arial, sans-serif;
+  /* Make text readable on blue background */
+  color: #fff;
 }
 
 /* Three columns on wider screens */
@@ -143,6 +145,7 @@ button:hover {
   margin-top: 10px;
   padding: 5px;
   font-size: 14px;
+  color: #fff; /* Ensure text is readable on blue */
 }
 
 /* Placeholder content */
@@ -171,7 +174,7 @@ button:hover {
   overflow: auto;
 }
 .modal-content {
-  background: #fff;
+  background: #aeb0b5; /* NASA gray background for modal */
   padding: 24px;
   border-radius: 8px;
   max-width: 800px; /* Increased from 500px */
@@ -185,6 +188,7 @@ button:hover {
   flex-direction: column;
   align-items: center;
   font-family: 'Inter', 'Public Sans', Arial, sans-serif;
+  color: #222; /* Dark text for readability */
 }
 .close {
   position: absolute;
@@ -192,7 +196,7 @@ button:hover {
   top: 12px;
   font-size: 28px;
   font-weight: bold;
-  color: #888;
+  color: #333; /* Darker close button for contrast */
   cursor: pointer;
 }
 .close:hover {
@@ -205,6 +209,12 @@ button:hover {
   object-fit: contain;
   margin-bottom: 10px;
   border-radius: 4px;
+}
+#modalTitle,
+#modalDate,
+#modalDescription,
+#modalCopyright {
+  color: #222; /* Ensure modal text is readable on gray */
 }
 
 /* Make sure main content stays above the background image, but below modal */
