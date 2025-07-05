@@ -146,6 +146,8 @@ button:hover {
   padding: 5px;
   font-size: 14px;
   color: #fff; /* Ensure text is readable on blue */
+  text-align: center; /* Center the date text */
+  font-family: 'DM Mono', 'Inter', 'Public Sans', monospace; /* Use DM Mono font */
 }
 
 /* Placeholder content */
