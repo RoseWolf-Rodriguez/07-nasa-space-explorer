@@ -162,7 +162,7 @@ button:hover {
 .modal {
   display: flex; /* Hidden by default, shown with JS */
   position: fixed;
-  z-index: 1000;
+  z-index: 2000; /* Increased z-index to ensure modal is above all content */
   left: 0; top: 0;
   width: 100vw; height: 100vh;
   background: rgba(0,0,0,0.6);
@@ -207,8 +207,8 @@ button:hover {
   border-radius: 4px;
 }
 
-/* Make sure main content stays above the background image */
-.container, .modal, .gallery, .site-header {
+/* Make sure main content stays above the background image, but below modal */
+.container, .gallery, .site-header {
   position: relative;
   z-index: 1;
 }
