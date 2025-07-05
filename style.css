@@ -10,6 +10,19 @@ body {
   font-family: 'Inter', 'Public Sans', Arial, sans-serif;
   background-color: #f1f1f1;
   padding: 20px;
+  position: relative; /* Needed for pseudo-element background */
+}
+
+/* Add a transparent NASA logo background */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  pointer-events: none;
+  background: url('img/NASA-Logo-Large.jpg') no-repeat center center;
+  background-size: 70vw auto;
+  opacity: 0.08; /* Adjust this value for more or less transparency */
 }
 
 /* Centered container */
@@ -192,6 +205,12 @@ button:hover {
   object-fit: contain;
   margin-bottom: 10px;
   border-radius: 4px;
+}
+
+/* Make sure main content stays above the background image */
+.container, .modal, .gallery, .site-header {
+  position: relative;
+  z-index: 1;
 }
 
 /* Responsive modal for small screens */
