@@ -13,7 +13,11 @@ const gallery = document.getElementById('gallery');
 // This sets up the date pickers to:
 // - Default to a range of 9 days (from 9 days ago to today)
 // - Restrict dates to NASA's image archive (starting from 1995)
-setupDateInputs(startInput, endInput);
+// setupDateInputs(startInput, endInput); // <-- Remove or comment out this line
+
+// Make sure the date inputs start blank
+startInput.value = '';
+endInput.value = '';
 
 // Listen for button clicks to fetch and display images
 getImagesButton.addEventListener('click', () => {
